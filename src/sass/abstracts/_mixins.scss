@@ -1,0 +1,15 @@
+@mixin clearfix {
+    &::after{
+        content:"";
+        display:table;
+        clear:both;
+    }
+}
+
+@mixin gradient($color1, $color2) {
+    background-image: linear-gradient(to right bottom, $color1, $color2 );
+}
+
+@mixin shadow($color, $num){
+    box-shadow: 0 1.5rem 4rem rgba($color, $num);
+}
