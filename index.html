@@ -19,17 +19,19 @@
     <div class="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-        <label for="navi__toggle" class="navigation__button">Menu</label>
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
 
         <div class="navigation__background">&nbsp;</div>
 
         <nav class="navigation__nav">
             <ul class="navigation__list">
-                <li class="navigation__item"><a href="#" class="navigation__link">About Natous</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Your benifits</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Popular tours</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link">Book now</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"> <span>01</span> About Natous</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Your benifits</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Popular tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Book now</a></li>
             </ul>
         </nav>
     </div>
@@ -142,7 +144,7 @@
                                 <p class="card__price-only">Only</p>
                                 <p class="card__price-value">$297</p>
                             </div>
-                            <a href="#" class="btn btn--white">Book now</a>
+                            <a href="#popup" class="btn btn--white">Book now</a>
                         </div>
                        </div>
                     </div>
@@ -173,7 +175,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$497</p>
                                 </div>
-                                <a href="" class="btn btn--white">Book now</a>
+                                <a href="#popup" class="btn btn--white">Book now</a>
                             </div>
                         </div>
                     </div>
@@ -204,7 +206,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">$897</p>
                                 </div>
-                                <a href="" class="btn btn--white">Book now</a>
+                                <a href="#popup" class="btn btn--white">Book now</a>
                             </div>
                         </div>
                     </div>
@@ -324,6 +326,22 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="" class="popup__img">
+                <img src="img/nat-9.jpg" alt="" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading--secondary u-margin-button-small">Start booking now</h2>
+                <h3 class="heading--tertiary  u-margin-button-small">Important &ndash; Please read these terms before booking</h3>
+                <p class="popup__text">Porttitor potenti proin, varius aenean, integer nibh curabitur faucibus pharetra aliquam. Suspendisse tempor sollicitudin, iaculis gravida, consectetur quisque auctor nunc netus eu egestas. Maecenas vestibulum ligula, proin ut, est phasellus sodales lacus hac. Mauris curae blandit, quis velit, aliquam accumsan vehicula venenatis libero non. Vel mollis fringilla pellentesque,</p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>  
 </body>
 
 </html>
